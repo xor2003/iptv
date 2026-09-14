@@ -78,7 +78,12 @@ def parse_m3u(source: str, text: str, selector: str = "") -> list[Entry]:
                 is_interesting = selector.startswith("interesting-") and INTERESTING[selector[-2:]].search(pending_info)
                 if selector == "interesting-en" and ("pluto.tv" in pending_info.lower() or "/plu-" in line.lower()):
                     is_interesting = False
-                is_pluto = "pluto.tv" in pending_info.lower() or "/plu-" in line.lower()
+                is_pluto = (
+                    "provider=\"pluto\"" in pending_info.lower()
+                    or "pluto.tv" in pending_info.lower()
+                    or "pluto.tv" in line.lower()
+                    or "/plu-" in line.lower()
+                )
                 if not is_pluto and (not selector or is_interesting or (selector == "serbia" and SERBIA.search(pending_info))):
                     entries.append(Entry(source, pending_info, line, user_agent, referrer))
             pending_info = None
