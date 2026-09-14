@@ -15,6 +15,8 @@ use a small name-based allowlist for news, public broadcasters, science,
 culture, kids, music, and documentary channels. Edit `sources.txt` to add or
 remove a source. The workflow runs daily and can also be started manually.
 
+The auxiliary feeds are restricted to Serbian/Balkan metadata and names.
+
 An alive check is time-specific. A stream may be geo-blocked, temporary, or
 become unavailable after the workflow publishes it. This repository stores
 playlist links and metadata; it does not proxy or copy video streams.

@@ -30,6 +30,7 @@ INTERESTING = {
     "ru": re.compile(r"(?i)(первый канал|россия.?1|россия.?24|россия.?к|культура|нтв|рен.?тв|rt russian|ртви|rbc|рбк|мир|пятый канал|звезда|матч|тнт|стс|пятница|муз.?тв|карусель|москва.?24|спас|победа|наука|планета|познавательное|дождь|москва|петербург)"),
     "en": re.compile(r"(?i)(bbc|cnn|sky news|al.?jazeera|euronews|france 24|dw|deutsche welle|bloomberg|cnbc|reuters|nhk world|cgtn|trt world|wion|abc news|nasa|weather|national geographic|discovery|history|smithsonian|animal planet|documentary|ted|science|nature|pluto|plex|rakuten|red bull|motorsport|espn|world news|voa|newsmax|rt english)"),
 }
+SERBIA = re.compile(r'(?i)(tvg-id="[^"]*\.rs|tvg-country="RS"|tvg-language="Serbian"|group-title="Serbia"|\b(rts|kurir|pannon|dmsat|dm sat|pink|prva|happy|nova s|narodna|red tv|arena sport|arena fight|rtv novi pazar|rtv bap)\b)')
 
 
 def read_sources(path: Path) -> list[tuple[str, str, str]]:
@@ -74,7 +75,9 @@ def parse_m3u(source: str, text: str, selector: str = "") -> list[Entry]:
             referrer = line.split(":", 2)[2]
         elif pending_info and line and not line.startswith("#"):
             if line.startswith(("http://", "https://", "rtmp://", "rtsp://")):
-                if not selector or INTERESTING[selector[-2:]].search(pending_info):
+                if not selector or (
+                    selector.startswith("interesting-") and INTERESTING[selector[-2:]].search(pending_info)
+                ) or (selector == "serbia" and SERBIA.search(pending_info)):
                     entries.append(Entry(source, pending_info, line, user_agent, referrer))
             pending_info = None
     return entries
