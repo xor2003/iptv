@@ -18,11 +18,11 @@ https://raw.githubusercontent.com/xor2003/iptv/main/serbia-working-en.m3u
 ```
 
 The source list includes IPTV-org Serbian, Serbia, and selected Russian and
-English channels, plus public Balkan playlists. The Russian and English feeds
-use a small name-based allowlist for news, public broadcasters, science,
-culture, kids, music, and documentary channels; Pluto TV ad-supported entries
-are excluded. Edit `sources.txt` to add or remove a source. The workflow runs
-daily and can also be started manually.
+English channels, plus public Balkan playlists. The English feed uses a small
+name-based allowlist for news, public broadcasters, science, culture, kids,
+music, and documentary channels. The full Russian-language feed is retained.
+Pluto TV entries are excluded from every source. Edit `sources.txt` to add or
+remove a source. The workflow runs daily and can also be started manually.
 
 The auxiliary feeds are restricted to Serbian/Balkan metadata and names.
 
