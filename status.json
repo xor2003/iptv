@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-14T20:15:18Z",
-  "source_entries": 1277,
-  "unique_urls_probed": 1149,
-  "working_urls": 618,
-  "published_channels": 618,
+  "generated_at": "2026-09-14T20:19:44Z",
+  "source_entries": 1274,
+  "unique_urls_probed": 1146,
+  "working_urls": 593,
+  "published_channels": 593,
   "published_by_language": {
-    "sr": 58,
-    "ru": 429,
-    "en": 131
+    "sr": 48,
+    "ru": 415,
+    "en": 130
   },
   "sources": [
     {
@@ -43,7 +43,7 @@
     {
       "label": "balkan-plus",
       "url": "https://raw.githubusercontent.com/dbojan/free-iptv-balkan-plus/main/balkan-plus.m3u",
-      "entries": 169,
+      "entries": 166,
       "error": ""
     },
     {
