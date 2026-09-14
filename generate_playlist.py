@@ -199,7 +199,7 @@ def main() -> int:
         "published_by_language": {language: len(entries) for language, entries in buckets.items()},
         "sources": source_status,
     }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"published {len(selected)} channels to {args.output}", file=sys.stderr)
+    print(f"published {len(selected)} channels to {args.output_prefix}-{{sr,ru,en}}.m3u", file=sys.stderr)
     return 0
 
 
