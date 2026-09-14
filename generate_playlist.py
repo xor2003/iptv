@@ -138,10 +138,14 @@ def main() -> int:
 
     sources = read_sources(args.sources)
     all_entries: list[Entry] = []
+    epg_urls: list[str] = []
     source_status = []
     for label, url, selector in sources:
         try:
-            entries = parse_m3u(label, fetch(url), selector)
+            text = fetch(url)
+            for header_url in re.findall(r'(?i)(?:x-tvg-url|url-tvg)="([^"]+)"', text):
+                epg_urls.extend(part.strip() for part in header_url.split(",") if part.strip())
+            entries = parse_m3u(label, text, selector)
             all_entries.extend(entries)
             source_status.append({"label": label, "url": url, "entries": len(entries), "error": ""})
             print(f"{label}: {len(entries)} entries", file=sys.stderr)
@@ -179,7 +183,10 @@ def main() -> int:
         language = "ru" if entry.source == "iptv-org-russian" else "en" if entry.source == "iptv-org-english" else "sr"
         buckets[language].append((entry, video))
     for language, language_entries in buckets.items():
-        output = ["#EXTM3U"]
+        header = "#EXTM3U"
+        if epg_urls:
+            header += ' x-tvg-url="' + ",".join(dict.fromkeys(epg_urls)) + '"'
+        output = [header]
         for entry, _video in language_entries:
             output.append(entry.info)
             if entry.user_agent:
