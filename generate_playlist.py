@@ -125,7 +125,7 @@ def probe(entry: Entry, timeout: int, retries: int) -> tuple[Entry, str]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--sources", type=Path, default=Path("sources.txt"))
-    parser.add_argument("--output", type=Path, default=Path("serbia-working.m3u"))
+    parser.add_argument("--output-prefix", type=Path, default=Path("serbia-working"))
     parser.add_argument("--status", type=Path, default=Path("status.json"))
     parser.add_argument("--workers", type=int, default=12)
     parser.add_argument("--timeout", type=int, default=10)
@@ -174,21 +174,29 @@ def main() -> int:
             selected.append((entry, video))
             channel_seen.add(key)
 
-    output = ["#EXTM3U"]
-    for entry, _video in selected:
-        output.append(entry.info)
-        if entry.user_agent:
-            output.append(f"#EXTVLCOPT:http-user-agent={entry.user_agent}")
-        if entry.referrer:
-            output.append(f"#EXTVLCOPT:http-referrer={entry.referrer}")
-        output.append(entry.url)
-    args.output.write_text("\n".join(output) + "\n", encoding="utf-8")
+    buckets: dict[str, list[tuple[Entry, str]]] = {"sr": [], "ru": [], "en": []}
+    for entry, video in selected:
+        language = "ru" if entry.source == "iptv-org-russian" else "en" if entry.source == "iptv-org-english" else "sr"
+        buckets[language].append((entry, video))
+    for language, language_entries in buckets.items():
+        output = ["#EXTM3U"]
+        for entry, _video in language_entries:
+            output.append(entry.info)
+            if entry.user_agent:
+                output.append(f"#EXTVLCOPT:http-user-agent={entry.user_agent}")
+            if entry.referrer:
+                output.append(f"#EXTVLCOPT:http-referrer={entry.referrer}")
+            output.append(entry.url)
+        args.output_prefix.with_name(f"{args.output_prefix.name}-{language}.m3u").write_text(
+            "\n".join(output) + "\n", encoding="utf-8"
+        )
     args.status.write_text(json.dumps({
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "source_entries": len(all_entries),
         "unique_urls_probed": len(unique),
         "working_urls": len(working),
         "published_channels": len(selected),
+        "published_by_language": {language: len(entries) for language, entries in buckets.items()},
         "sources": source_status,
     }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"published {len(selected)} channels to {args.output}", file=sys.stderr)

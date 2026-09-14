@@ -6,7 +6,15 @@ This repository periodically fetches public M3U sources, checks each URL with
 Playlist URL:
 
 ```text
-https://raw.githubusercontent.com/xor2003/iptv/main/serbia-working.m3u
+https://raw.githubusercontent.com/xor2003/iptv/main/serbia-working-sr.m3u
+```
+
+Language playlists:
+
+```text
+https://raw.githubusercontent.com/xor2003/iptv/main/serbia-working-sr.m3u
+https://raw.githubusercontent.com/xor2003/iptv/main/serbia-working-ru.m3u
+https://raw.githubusercontent.com/xor2003/iptv/main/serbia-working-en.m3u
 ```
 
 The source list includes IPTV-org Serbian, Serbia, and selected Russian and
