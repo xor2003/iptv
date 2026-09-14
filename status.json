@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-14T18:51:16Z",
-  "source_entries": 980,
-  "unique_urls_probed": 853,
-  "working_urls": 496,
-  "published_channels": 496,
+  "generated_at": "2026-09-14T20:15:18Z",
+  "source_entries": 1277,
+  "unique_urls_probed": 1149,
+  "working_urls": 618,
+  "published_channels": 618,
   "published_by_language": {
-    "sr": 359,
-    "ru": 5,
-    "en": 132
+    "sr": 58,
+    "ru": 429,
+    "en": 131
   },
   "sources": [
     {
@@ -19,7 +19,7 @@
     {
       "label": "iptv-org-russian",
       "url": "https://iptv-org.github.io/iptv/languages/rus.m3u",
-      "entries": 22,
+      "entries": 621,
       "error": ""
     },
     {
@@ -43,7 +43,7 @@
     {
       "label": "balkan-plus",
       "url": "https://raw.githubusercontent.com/dbojan/free-iptv-balkan-plus/main/balkan-plus.m3u",
-      "entries": 466,
+      "entries": 169,
       "error": ""
     },
     {
@@ -55,7 +55,7 @@
     {
       "label": "shovo",
       "url": "https://shovo127.github.io/IPTV-By-Shovo/index.m3u",
-      "entries": 100,
+      "entries": 95,
       "error": ""
     },
     {
