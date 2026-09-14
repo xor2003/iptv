@@ -1,7 +1,7 @@
 # label|playlist URL
 iptv-org-serbian|https://iptv-org.github.io/iptv/languages/srp.m3u
-iptv-org-russian|https://iptv-org.github.io/iptv/languages/rus.m3u
-iptv-org-english|https://iptv-org.github.io/iptv/languages/eng.m3u
+iptv-org-russian|https://iptv-org.github.io/iptv/languages/rus.m3u|interesting-ru
+iptv-org-english|https://iptv-org.github.io/iptv/languages/eng.m3u|interesting-en
 iptv-org-serbia|https://iptv-org.github.io/iptv/countries/rs.m3u
 balkan-domestic|https://raw.githubusercontent.com/dbojan/free-iptv-balkan-plus/refs/heads/main/balkan-plus-samo-domaci.m3u
 balkan-plus|https://raw.githubusercontent.com/dbojan/free-iptv-balkan-plus/main/balkan-plus.m3u

@@ -3,7 +3,7 @@ name: Update working playlist
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 3 * * *"
 
 permissions:
   contents: write
@@ -20,7 +20,7 @@ jobs:
       - name: Install ffprobe
         run: sudo apt-get update && sudo apt-get install --no-install-recommends -y ffmpeg
       - name: Generate playlist
-        run: python3 generate_playlist.py --workers 12 --timeout 10 --retries 1
+        run: python3 generate_playlist.py --workers 24 --timeout 8 --retries 0
       - name: Commit changed playlist
         run: |
           git config user.name "github-actions[bot]"

@@ -26,17 +26,25 @@ class Entry:
     referrer: str = ""
 
 
-def read_sources(path: Path) -> list[tuple[str, str]]:
+INTERESTING = {
+    "ru": re.compile(r"(?i)(первый канал|россия.?1|россия.?24|россия.?к|культура|нтв|рен.?тв|rt russian|ртви|rbc|рбк|мир|пятый канал|звезда|матч|тнт|стс|пятница|муз.?тв|карусель|москва.?24|спас|победа|наука|планета|познавательное|дождь|москва|петербург)"),
+    "en": re.compile(r"(?i)(bbc|cnn|sky news|al.?jazeera|euronews|france 24|dw|deutsche welle|bloomberg|cnbc|reuters|nhk world|cgtn|trt world|wion|abc news|nasa|weather|national geographic|discovery|history|smithsonian|animal planet|documentary|ted|science|nature|pluto|plex|rakuten|red bull|motorsport|espn|world news|voa|newsmax|rt english)"),
+}
+
+
+def read_sources(path: Path) -> list[tuple[str, str, str]]:
     result = []
     for raw in path.read_text(encoding="utf-8").splitlines():
         line = raw.strip()
         if not line or line.startswith("#"):
             continue
         try:
-            label, url = line.split("|", 1)
+            fields = line.split("|", 2)
+            label, url = fields[:2]
+            selector = fields[2].strip() if len(fields) == 3 else ""
         except ValueError as exc:
             raise ValueError(f"Invalid source line: {line!r}") from exc
-        result.append((label.strip(), url.strip()))
+        result.append((label.strip(), url.strip(), selector))
     if not result:
         raise ValueError(f"No sources found in {path}")
     return result
@@ -48,7 +56,7 @@ def fetch(url: str) -> str:
         return response.read().decode("utf-8", "replace")
 
 
-def parse_m3u(source: str, text: str) -> list[Entry]:
+def parse_m3u(source: str, text: str, selector: str = "") -> list[Entry]:
     lines = text.splitlines()
     entries: list[Entry] = []
     pending_info = None
@@ -66,7 +74,8 @@ def parse_m3u(source: str, text: str) -> list[Entry]:
             referrer = line.split(":", 2)[2]
         elif pending_info and line and not line.startswith("#"):
             if line.startswith(("http://", "https://", "rtmp://", "rtsp://")):
-                entries.append(Entry(source, pending_info, line, user_agent, referrer))
+                if not selector or INTERESTING[selector[-2:]].search(pending_info):
+                    entries.append(Entry(source, pending_info, line, user_agent, referrer))
             pending_info = None
     return entries
 
@@ -127,9 +136,9 @@ def main() -> int:
     sources = read_sources(args.sources)
     all_entries: list[Entry] = []
     source_status = []
-    for label, url in sources:
+    for label, url, selector in sources:
         try:
-            entries = parse_m3u(label, fetch(url))
+            entries = parse_m3u(label, fetch(url), selector)
             all_entries.extend(entries)
             source_status.append({"label": label, "url": url, "entries": len(entries), "error": ""})
             print(f"{label}: {len(entries)} entries", file=sys.stderr)
@@ -152,7 +161,7 @@ def main() -> int:
                 print(f"probed {index}/{len(futures)}; working={len(working)}", file=sys.stderr)
 
     # Prefer the first working URL for a channel, following sources.txt order.
-    source_order = {label: index for index, (label, _) in enumerate(sources)}
+    source_order = {label: index for index, (label, _, _) in enumerate(sources)}
     working.sort(key=lambda pair: source_order.get(pair[0].source, 9999))
     selected: list[tuple[Entry, str]] = []
     channel_seen: set[str] = set()
