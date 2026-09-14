@@ -1,0 +1,30 @@
+name: Update working playlist
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install ffprobe
+        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y ffmpeg
+      - name: Generate playlist
+        run: python3 generate_playlist.py --workers 12 --timeout 10 --retries 1
+      - name: Commit changed playlist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add serbia-working.m3u status.json
+          git diff --cached --quiet || git commit -m "Update working IPTV playlist"
+          git push

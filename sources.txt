@@ -1,0 +1,10 @@
+# label|playlist URL
+iptv-org-serbian|https://iptv-org.github.io/iptv/languages/srp.m3u
+iptv-org-russian|https://iptv-org.github.io/iptv/languages/rus.m3u
+iptv-org-english|https://iptv-org.github.io/iptv/languages/eng.m3u
+iptv-org-serbia|https://iptv-org.github.io/iptv/countries/rs.m3u
+balkan-domestic|https://raw.githubusercontent.com/dbojan/free-iptv-balkan-plus/refs/heads/main/balkan-plus-samo-domaci.m3u
+balkan-plus|https://raw.githubusercontent.com/dbojan/free-iptv-balkan-plus/main/balkan-plus.m3u
+free-tv|https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+shovo|https://shovo127.github.io/IPTV-By-Shovo/index.m3u
+netplus|https://raw.githubusercontent.com/iptv-ch/iptv-ch.github.io/master/netplus.m3u8
