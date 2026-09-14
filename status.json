@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-09-14T18:09:25Z",
+  "source_entries": 1664,
+  "unique_urls_probed": 1532,
+  "working_urls": 1163,
+  "published_channels": 1163,
+  "sources": [
+    {
+      "label": "iptv-org-serbian",
+      "url": "https://iptv-org.github.io/iptv/languages/srp.m3u",
+      "entries": 55,
+      "error": ""
+    },
+    {
+      "label": "iptv-org-russian",
+      "url": "https://iptv-org.github.io/iptv/languages/rus.m3u",
+      "entries": 22,
+      "error": ""
+    },
+    {
+      "label": "iptv-org-english",
+      "url": "https://iptv-org.github.io/iptv/languages/eng.m3u",
+      "entries": 922,
+      "error": ""
+    },
+    {
+      "label": "iptv-org-serbia",
+      "url": "https://iptv-org.github.io/iptv/countries/rs.m3u",
+      "entries": 49,
+      "error": ""
+    },
+    {
+      "label": "balkan-domestic",
+      "url": "https://raw.githubusercontent.com/dbojan/free-iptv-balkan-plus/refs/heads/main/balkan-plus-samo-domaci.m3u",
+      "entries": 34,
+      "error": ""
+    },
+    {
+      "label": "balkan-plus",
+      "url": "https://raw.githubusercontent.com/dbojan/free-iptv-balkan-plus/main/balkan-plus.m3u",
+      "entries": 466,
+      "error": ""
+    },
+    {
+      "label": "free-tv",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+      "entries": 12,
+      "error": ""
+    },
+    {
+      "label": "shovo",
+      "url": "https://shovo127.github.io/IPTV-By-Shovo/index.m3u",
+      "entries": 100,
+      "error": ""
+    },
+    {
+      "label": "netplus",
+      "url": "https://raw.githubusercontent.com/iptv-ch/iptv-ch.github.io/master/netplus.m3u8",
+      "entries": 4,
+      "error": ""
+    }
+  ]
+}
