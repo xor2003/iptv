@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-14T20:19:44Z",
-  "source_entries": 1274,
-  "unique_urls_probed": 1146,
-  "working_urls": 593,
-  "published_channels": 593,
+  "generated_at": "2026-09-15T08:47:05Z",
+  "source_entries": 1275,
+  "unique_urls_probed": 1147,
+  "working_urls": 573,
+  "published_channels": 573,
   "published_by_language": {
-    "sr": 48,
-    "ru": 415,
-    "en": 130
+    "sr": 49,
+    "ru": 397,
+    "en": 127
   },
   "sources": [
     {
@@ -25,7 +25,7 @@
     {
       "label": "iptv-org-english",
       "url": "https://iptv-org.github.io/iptv/languages/eng.m3u",
-      "entries": 238,
+      "entries": 239,
       "error": ""
     },
     {
