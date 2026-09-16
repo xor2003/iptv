@@ -11,89 +11,91 @@ https://stream.nmih.hu:4102/live.m3u8
 https://tv.rtv-niksic.me/hls/stream.m3u8
 #EXTINF:-1 tvg-id="SOSKanalPlus.rs@SD" tvg-logo="https://i.imgur.com/9SD40uH.png" group-title="Sports",SOS Kanal Plus (720p)
 https://53be5ef2d13aa.streamlock.net/soskanalplus/soskanalplus.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="TDIRadioTV.rs@SD" tvg-logo="https://i.imgur.com/POdTmaD.png" group-title="Music",TDI Radio TV
-https://peer2.tdiradio.com/static/streaming-playlists/hls/8f5d84ce-e8ac-4109-9975-9665f5605557/master.m3u8
-#EXTINF:-1 tvg-id="RTRSplus.ba@SD" tvg-logo="https://i.imgur.com/k06WvYl.png" group-title="Undefined",RTRS Plus (576p) [Not 24/7]
-https://pluslive.rtrs.tv/plus/plus/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVBap.rs@SD" tvg-logo="https://i.imgur.com/TBAtPH6.png" group-title="Undefined",RTV Bap (480p)
 https://53be5ef2d13aa.streamlock.net/rtvbap/uzivo/playlist.m3u8
-#EXTINF:-1 tvg-id="TVPanon.rs@SD" tvg-logo="https://i.imgur.com/9ZKA4Gx.png" group-title="Undefined",TV Panon
-https://stream2.nmih.hu:4102/live.m3u8
-#EXTINF:-1 tvg-id="SandzakTV.rs@SD" tvg-logo="https://i.imgur.com/lm9Fgsp.png" group-title="Undefined",Sandzak TV (576p)
-https://streaming.iptv.nextfiber.rs/nxt004/master.m3u8
+#EXTINF:-1 tvg-id="RTRSplus.ba@SD" tvg-logo="https://i.imgur.com/k06WvYl.png" group-title="Undefined",RTRS Plus (576p) [Not 24/7]
+https://pluslive.rtrs.tv/plus/plus/playlist.m3u8
+#EXTINF:-1 tvg-id="TDIRadioTV.rs@SD" tvg-logo="https://i.imgur.com/POdTmaD.png" group-title="Music",TDI Radio TV
+https://peer2.tdiradio.com/static/streaming-playlists/hls/8f5d84ce-e8ac-4109-9975-9665f5605557/master.m3u8
 #EXTINF:-1 tvg-id="TVHram.rs@SD" tvg-logo="https://i.imgur.com/XzAYOFK.png" group-title="Undefined",TV Hram (576p) [Not 24/7]
 https://vod1.laki.eu/live/hram/index.m3u8
 #EXTINF:-1 tvg-id="DMSat.rs@SD" tvg-logo="https://i.imgur.com/LdeA1Cn.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Music",DM Sat (576p)
 https://shift03.isp.bg/DMSat/index.m3u8
+#EXTINF:-1 tvg-id="TVPiKanal.rs@SD" tvg-logo="https://i.imgur.com/8ugnFa3.png" group-title="Undefined",TV Pi Kanal (576p) [Not 24/7]
+https://stream.pikanal.rs/pikanal/pgm.m3u8
+#EXTINF:-1 tvg-id="SandzakTV.rs@SD" tvg-logo="https://i.imgur.com/lm9Fgsp.png" group-title="Undefined",Sandzak TV (576p)
+https://streaming.iptv.nextfiber.rs/nxt004/master.m3u8
+#EXTINF:-1 tvg-id="RTVNoviPazar.rs@SD" tvg-logo="https://i.imgur.com/NpyRVyC.png" group-title="Undefined",RTV Novi Pazar
+https://tv.rtvnp.rs/stream.m3u8
 #EXTINF:-1 tvg-id="ZICOTV.rs@SD" tvg-logo="https://i.imgur.com/8wbTnNW.png" group-title="Music",ZICO TV (720p)
 https://gjirafa-video-live.gjirafa.net/gjvideo-live/j3a-n14-2pf-g3s/index.m3u8
-#EXTINF:-1 tvg-id="TVArta.xk@SD" tvg-logo="https://i.imgur.com/MAhJkK9.png" group-title="News",TV Arta (720p)
-https://gjirafa-video-live.gjirafa.net/gjvideo-live/mps-vgx-u9p-qv1/index.m3u8
 #EXTINF:-1 tvg-id="AXNAdria.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",AXN Adria
 http://5.57.74.130:8000/play/a0at/index.m3u8
+#EXTINF:-1 tvg-id="TVArta.xk@SD" tvg-logo="https://i.imgur.com/MAhJkK9.png" group-title="News",TV Arta (720p)
+https://gjirafa-video-live.gjirafa.net/gjvideo-live/mps-vgx-u9p-qv1/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/8ugnFa3.png", Pi (net)
+http://stream.pikanal.rs/pikanal/pgm.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/72oMSWz.png", N1 BH (net)
 https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1bos&u=n1info&p=n1Sh4redSecre7iNf0
-#EXTINF:-1 tvg-logo="https://i.imgur.com/72oMSWz.png", N1 HR (net)
-https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1hrv&u=n1info&p=n1Sh4redSecre7iNf0
-#EXTINF:-1 tvg-logo="https://i.imgur.com/72oMSWz.png", N1 SR (net)
-https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1srp&u=n1info&p=n1Sh4redSecre7iNf0
-#EXTINF:-1 tvg-logo="", M (net)
-https://live.tv-m.net/hls/stream.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/HBPnUD5.png", Kurir (net)
 https://static.am.mediaoutcast.com/storage/nQJnjJkO/nQJnjJkO/stream/O68x4o8g/720p/720p.m3u8
-#EXTINF:-1 tvg-logo="", ATV Kosovo (jgl)
-https://gjirafa-video-live.gjirafa.net/gjvideo-live/0nj-g63-92x-few/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/72oMSWz.png", N1 HR (net)
+https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1hrv&u=n1info&p=n1Sh4redSecre7iNf0
+#EXTINF:-1 tvg-logo="", M (net)
+https://live.tv-m.net/hls/stream.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/72oMSWz.png", N1 SR (net)
+https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1srp&u=n1info&p=n1Sh4redSecre7iNf0
 #EXTINF:-1 tvg-logo="https://i.imgur.com/CG44YT3.png", RTV 1 (net)
 http://212.200.230.50:1935/RTV/rtv1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/skpr66t.png", RTV 2 (net)
 http://212.200.230.50:1935/RTV/rtv2/playlist.m3u8
-#EXTINF:-1 tvg-logo="", T7 Kosovo (jgl)
-https://gjirafa-video-live.gjirafa.net/gjvideo-livestream-specific/1z8-byc-4ee-lc9/tracks-v2a1/rewind-14400.ts.m3u8
+#EXTINF:-1 tvg-logo="", ATV Kosovo (jgl)
+https://gjirafa-video-live.gjirafa.net/gjvideo-live/0nj-g63-92x-few/index.m3u8
 #EXTINF:-1 tvg-logo="", Pro 1 Kosovo (jgl)
 https://gjirafa-video-live.gjirafa.net/gjvideo-live/nng-gki-l1j-n1z/index.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Russia-today-logo.svg/512px-Russia-today-logo.svg.png", RT Balkan (net)
 https://rt-srb.rttv.com/dvr/rtbalkan/playlist_1600Kb.m3u8
-#EXTINF:-1 tvg-logo="", RTV Zenica (net)
-https://stream.rtvze.ba/live/123/123.m3u8
 #EXTINF:-1 tvg-logo="", RTV HB (net)
 https://prd-hometv-live-open.spectar.tv/ERO_1_083/576p/chunklist.m3u8
-#EXTINF:-1 gt="MOV-OLD" tvg-country="US" tvg-id="TVSDriveInMovie.us" tvg-logo="https://i.imgur.com/OR9APjb.png" provider="tvs" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:49" description="" ,Drive In Movie (TVS)
-https://bozztv.com/gusa/gusa-tvsdriveinmovie/index.m3u8
+#EXTINF:-1 tvg-logo="", T7 Kosovo (jgl)
+https://gjirafa-video-live.gjirafa.net/gjvideo-livestream-specific/1z8-byc-4ee-lc9/tracks-v2a1/rewind-14400.ts.m3u8
+#EXTINF:-1 tvg-logo="", RTV Zenica (net)
+https://stream.rtvze.ba/live/123/123.m3u8
 #EXTINF:-1 gt="MOV-OLD" tvg-country="US" tvg-id="TVSClassicMovies.us" tvg-logo="https://i.imgur.com/st1xMsw.png" provider="tvs" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:42" description="" ,Classic Movies (TVS)
 https://bozztv.com/gusa/gusa-tvsclassicmovies/index.m3u8
+#EXTINF:-1 gt="MOV-OLD" tvg-country="US" tvg-id="TVSDriveInMovie.us" tvg-logo="https://i.imgur.com/OR9APjb.png" provider="tvs" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:49" description="" ,Drive In Movie (TVS)
+https://bozztv.com/gusa/gusa-tvsdriveinmovie/index.m3u8
 #EXTINF:-1 gt="MOV-OLD" tvg-country="US" tvg-id="TVSNostalgiaMovies.us" tvg-logo="https://i.imgur.com/w4fxiKi.png" provider="tvs" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:45" description="" ,Movies Nostalgia (TVS)
 https://bozztv.com/gusa/gusa-tvsNostalgiaMovies/index.m3u8
-#EXTINF:-1 gt="MOV-OLD" tvg-country="US" tvg-id="" tvg-logo="" provider="30a" url_mh="" url_alt="" status="ok:0 2024-11-09_11:53:05" description="" ,Classic Movies (30A TV)
-https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8
-#EXTINF:-1 gt="'MOV-WESTERN" tvg-country="US" tvg-id="TVSWesternMovie.us" tvg-logo="https://i.imgur.com/dwr98qb.png" provider="tvs" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:36" description="" ,Western Movie (TVS)
-https://bozztv.com/gusa/gusa-tvswesternmovies/index.m3u8
-#EXTINF:-1 gt="MOV" tvg-country="US" tvg-id="ToonamiAftermathMovies.us" tvg-logo="" provider="toonami" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:33" description="" ,Toonami Aftermath Movies
-http://api.toonamiaftermath.com:3000/movies/playlist.m3u8
-#EXTINF:-1 gt="MOV" tvg-country="GB" tvg-id="" tvg-logo="" provider="samsung" url_mh="" url_alt="https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8" status="ok:0 2024-11-09_12:26:23" description="" ,Moviesphere England (Samsung)
-https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
-#EXTINF:-1 gt="KIDS" tvg-country="US" tvg-id="ToonamiAftermathWest.us" tvg-logo="" provider="toonami" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:13" description="" ,zzKIDS: Toonami Aftermath West
-http://api.toonamiaftermath.com:3000/pst/playlist.m3u8
-#EXTINF:-1 gt="KIDS" tvg-country="US" tvg-id="ToonamiAftermathEast.us" tvg-logo="" provider="toonami" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:30" description="" ,zzKIDS: Toonami Aftermath East
-http://api.toonamiaftermath.com:3000/est/playlist.m3u8
-#EXTINF:-1 gt="NATURE" tvg-country="" tvg-id="" tvg-logo="" provider="Xiaomi" url_mh="" url_alt="" status="ok:0 2024-11-09_12:32:04" description="" ,zzNATURE: Drone tv1 (Xiaomi)
-https://airvuz-dronetv-1-eu.xiaomi.wurl.tv/2000.m3u8
-#EXTINF:-1 gt="MOV-ASIAN" tvg-country="US" tvg-id="" tvg-logo="" provider="rakuten" url_mh="" url_alt="" status="ok:0 2024-11-09_12:22:27" description="" ,Viki (Rakuten)
-https://newidco-rakutenviki-2-eu.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:-1 gt="MOV" tvg-country="US" tvg-id="MyTimeMovieNetworkBrazil.br" tvg-logo="https://i.imgur.com/aiGQtzI.png" provider="samsung" url_mh="" url_alt="https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8" status="ok:0 2024-11-09_12:27:48" description="" ,Movie MyTime Network Brazil (Samsung)
 https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8
+#EXTINF:-1 gt="MOV" tvg-country="GB" tvg-id="" tvg-logo="" provider="samsung" url_mh="" url_alt="https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8" status="ok:0 2024-11-09_12:26:23" description="" ,Moviesphere England (Samsung)
+https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
+#EXTINF:-1 gt="'MOV-WESTERN" tvg-country="US" tvg-id="TVSWesternMovie.us" tvg-logo="https://i.imgur.com/dwr98qb.png" provider="tvs" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:36" description="" ,Western Movie (TVS)
+https://bozztv.com/gusa/gusa-tvswesternmovies/index.m3u8
 #EXTINF:-1 gt="MOV-OLD" tvg-country="US" tvg-id="" tvg-logo="" provider="samsung" url_mh="" url_alt="https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-actionhollywood-samsungnz/playlist.m3u8" status="ok:0 2024-11-09_12:28:33" description="" ,Action Hollywood Movies (Samsung)
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-actionhollywood-samsungnz/playlist.m3u8
+#EXTINF:-1 gt="KIDS" tvg-country="US" tvg-id="ToonamiAftermathEast.us" tvg-logo="" provider="toonami" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:30" description="" ,zzKIDS: Toonami Aftermath East
+http://api.toonamiaftermath.com:3000/est/playlist.m3u8
+#EXTINF:-1 gt="MOV" tvg-country="US" tvg-id="ToonamiAftermathMovies.us" tvg-logo="" provider="toonami" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:33" description="" ,Toonami Aftermath Movies
+http://api.toonamiaftermath.com:3000/movies/playlist.m3u8
+#EXTINF:-1 gt="MOV-ASIAN" tvg-country="US" tvg-id="" tvg-logo="" provider="rakuten" url_mh="" url_alt="" status="ok:0 2024-11-09_12:22:27" description="" ,Viki (Rakuten)
+https://newidco-rakutenviki-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 gt="KIDS" tvg-country="US" tvg-id="ToonamiAftermathWest.us" tvg-logo="" provider="toonami" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:13" description="" ,zzKIDS: Toonami Aftermath West
+http://api.toonamiaftermath.com:3000/pst/playlist.m3u8
+#EXTINF:-1 gt="NATURE" tvg-country="" tvg-id="" tvg-logo="" provider="Xiaomi" url_mh="" url_alt="" status="ok:0 2024-11-09_12:32:04" description="" ,zzNATURE: Drone tv1 (Xiaomi)
+https://airvuz-dronetv-1-eu.xiaomi.wurl.tv/2000.m3u8
 #EXTINF:-1 gt="SERIES" tvg-country="" tvg-id="" tvg-logo="" provider="tvkaista" url_mh="" url_alt="" status="ok:0 2024-11-09_12:31:38" description="" ,SERIES M: STAR Finland (Tvkaista)
 https://live-fi.tvkaista.net/star-channel/live.m3u8?hd=true
 #EXTINF:-1 gt="NATURE" tvg-country="US" tvg-id="ThePetCollectiveSweden.se" tvg-logo="https://i.imgur.com/Mk28uUy.png" provider="samsung" url_mh="" url_alt="https://the-pet-collective-international-se.samsung.wurl.tv/playlist.m3u8" status="ok:0 2024-11-09_12:31:16" description="" ,zzNATURE: The Pet Collective International (Samsung)
 https://the-pet-collective-international-se.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="RTV 1" tvg-logo="https://i.imgur.com/CG44YT3.png" tvg-id="RTV1.rs" tvg-chno="1" tvg-country="RS" group-title="Serbia",RTV 1
-rtmp://212.200.230.50:1935/RTV/rtv1
 #EXTINF:-1 tvg-name="RTV 2" tvg-logo="https://i.imgur.com/skpr66t.png" tvg-id="RTV2.rs" tvg-chno="2" tvg-country="RS" group-title="Serbia",RTV 2
 rtmp://212.200.230.50:1935/RTV/rtv2
-#EXTINF:-1 tvg-id="RedTVLebanon.lb@HD" tvg-logo="https://i.imgur.com/bWwY885.png" group-title="News",Red TV Lebanon (1080p)
-https://live.kwikmotion.com/redtvlive/redtv.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="RTV 1" tvg-logo="https://i.imgur.com/CG44YT3.png" tvg-id="RTV1.rs" tvg-chno="1" tvg-country="RS" group-title="Serbia",RTV 1
+rtmp://212.200.230.50:1935/RTV/rtv1
 #EXTINF:-1 tvg-id="HappyRadioTV.ua@HD" tvg-logo="https://i.imgur.com/PAw36qJ.png" group-title="Music",Happy Radio TV (1080p)
 https://tv.mediacp.eu:8081/happyradio/index.m3u8
 #EXTINF:-1 tvg-id="RedTVShop.bo@SD" tvg-logo="https://i.imgur.com/I7yB176.png" group-title="Shop",Red TV Shop (720p)
 https://master.tucableip.com/redtvshop/index.m3u8
+#EXTINF:-1 tvg-id="RedTVLebanon.lb@HD" tvg-logo="https://i.imgur.com/bWwY885.png" group-title="News",Red TV Lebanon (1080p)
+https://live.kwikmotion.com/redtvlive/redtv.smil/playlist.m3u8
