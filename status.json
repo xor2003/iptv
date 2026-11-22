@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-21T11:13:32Z",
+  "generated_at": "2026-11-22T11:33:02Z",
   "source_entries": 1394,
   "unique_urls_probed": 1298,
-  "working_urls": 564,
-  "published_channels": 563,
+  "working_urls": 571,
+  "published_channels": 570,
   "published_by_language": {
     "sr": 56,
-    "ru": 345,
-    "en": 162
+    "ru": 355,
+    "en": 159
   },
   "sources": [
     {
