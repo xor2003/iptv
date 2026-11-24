@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-23T12:56:40Z",
-  "source_entries": 1226,
-  "unique_urls_probed": 1165,
-  "working_urls": 525,
-  "published_channels": 524,
+  "generated_at": "2026-11-24T13:51:55Z",
+  "source_entries": 1394,
+  "unique_urls_probed": 1298,
+  "working_urls": 455,
+  "published_channels": 454,
   "published_by_language": {
-    "sr": 42,
-    "ru": 323,
+    "sr": 56,
+    "ru": 239,
     "en": 159
   },
   "sources": [
@@ -19,13 +19,13 @@
     {
       "label": "iptv-org-russian",
       "url": "https://iptv-org.github.io/iptv/languages/rus.m3u",
-      "entries": 657,
+      "entries": 665,
       "error": ""
     },
     {
       "label": "iptv-org-english",
       "url": "https://iptv-org.github.io/iptv/languages/eng.m3u",
-      "entries": 350,
+      "entries": 344,
       "error": ""
     },
     {
@@ -43,8 +43,8 @@
     {
       "label": "balkan-plus",
       "url": "https://raw.githubusercontent.com/dbojan/free-iptv-balkan-plus/main/balkan-plus.m3u",
-      "entries": 0,
-      "error": "HTTP Error 503: Backend.max_conn reached"
+      "entries": 166,
+      "error": ""
     },
     {
       "label": "free-tv",
